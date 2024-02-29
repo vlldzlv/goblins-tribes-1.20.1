@@ -1,6 +1,10 @@
 {
-  "item.tutorialmod.ruby": "Ruby",
-  "item.tutorialmod.raw_ruby": "Raw Ruby",
+  "item.tutorialmod.mana_crystal": "Mana Crystal",
+  "item.tutorialmod.raw_mana_crystal": "Raw Mana Crystal",
 
-  "itemgroup.ruby": "Ruby Tutorial Group"
+  "block.tutorialmod.mana_crystal_block": "Mana Crystal Block",
+  "block.tutorialmod.raw_mana_crystal_block": "Raw Mana Crystal Block",
+
+
+  "itemgroup.mana_crystal": "Mana Crystal Group"
 }

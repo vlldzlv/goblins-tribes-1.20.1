@@ -11,19 +11,19 @@ import net.minecraft.util.Identifier;
 import net.vlldzlv.tutorialmod.TutorialMod;
 
 public class ModItems {
-    public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
-    public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new FabricItemSettings()));
+    public static final Item MANA_CRYSTAL = registerItem("mana_crystal", new Item(new FabricItemSettings()));
+    public static final Item RAW_MANA_CRYSTAL = registerItem("raw_mana_crystal", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup (FabricItemGroupEntries entries) {
-        entries.add(RUBY);
-        entries.add(RAW_RUBY);
+        entries.add(MANA_CRYSTAL);
+        entries.add(RAW_MANA_CRYSTAL);
     }
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
     }
 
-    public static void registerMOdItems(){
+    public static void registerModItems(){
         TutorialMod.LOGGER.info("Registering Mod Items for " + TutorialMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
