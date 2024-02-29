@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "tutorialmod:mana_crystal_block"
+    }
+  ],
+  "result": {
+    "item": "tutorialmod:mana_crystal",
+    "count": 4
+  }
+}
