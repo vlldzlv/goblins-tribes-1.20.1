@@ -1,0 +1,13 @@
+{
+  "item.tutorialmod.mana_crystal": "Осколок Кристалла Маны",
+  "item.tutorialmod.raw_mana_crystal": "Неогранённый Осколок Кристалла Маны",
+
+  "block.tutorialmod.mana_crystal_block": "Кристалл Маны",
+  "block.tutorialmod.raw_mana_crystal_block": "Неогранённый Кристалл Маны",
+
+  "block.tutorialmod.stone_mana_crystal_ore": "Залежи Кристаллов Маны",
+  "block.tutorialmod.deepslate_mana_crystal_ore": "Глубинные Залежи Кристаллов Маны",
+
+
+  "itemgroup.mana_crystal": "Кристаллы Маны"
+}
