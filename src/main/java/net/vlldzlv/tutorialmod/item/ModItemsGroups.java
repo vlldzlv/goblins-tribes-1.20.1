@@ -23,6 +23,9 @@ public class ModItemsGroups {
                         entries.add(ModBlocks.MANA_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.RAW_MANA_CRYSTAL_BLOCK);
 
+                        entries.add(ModBlocks.STONE_MANA_CRYSTAL_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_MANA_CRYSTAL_ORE);
+
                     }).build());
 
         public static void registerItemGroup(){
