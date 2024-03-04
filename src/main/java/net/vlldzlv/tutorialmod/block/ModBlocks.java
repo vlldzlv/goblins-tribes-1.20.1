@@ -11,6 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.vlldzlv.tutorialmod.TutorialMod;
+import net.vlldzlv.tutorialmod.block.custom.Drum;
 
 public class ModBlocks {
     public static final Block MANA_CRYSTAL_BLOCK = registerBlock("mana_crystal_block",
@@ -22,6 +23,8 @@ public static final Block STONE_MANA_CRYSTAL_ORE = registerBlock("stone_mana_cry
         new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f), UniformIntProvider.create(2,5)));
 public static final Block DEEPSLATE_MANA_CRYSTAL_ORE = registerBlock("deepslate_mana_crystal_ore",
         new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(3f), UniformIntProvider.create(2,5)));
+public static final Block DRUM = registerBlock("drum",
+        new Drum(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK)));
 
 
 
