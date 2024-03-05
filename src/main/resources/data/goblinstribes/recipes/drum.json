@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:leather"
+    },
+    "O": {
+      "item": "minecraft:stripped_dark_oak_log"
+    },
+    "K": {
+      "item": "goblinstribes:ladite"
+    }
+  },
+  "pattern": [
+    "###",
+    "OKO",
+    "O#O"
+  ],
+  "result": {
+    "item": "goblinstribes:drum"
+  }
+}

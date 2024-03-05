@@ -1,9 +1,8 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:mana_crystal_block",
-    "tutorialmod:raw_mana_crystal_block",
-    "tutorialmod:deepslate_mana_crystal_ore",
-    "tutorialmod:stone_mana_crystal_ore"
+    "goblinstribes:ladite_block",
+    "goblinstribes:deepslate_ladite_ore",
+    "goblinstribes:stone_ladite_ore"
   ]
 }

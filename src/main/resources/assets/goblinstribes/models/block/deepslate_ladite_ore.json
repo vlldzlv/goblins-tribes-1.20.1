@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "goblinstribes:block/deepslate_ladite_ore"
+  }
+}

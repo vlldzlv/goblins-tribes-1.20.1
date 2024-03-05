@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "goblinstribes:block/drum_bottom",
+    "side": "goblinstribes:block/drum_side",
+    "top": "goblinstribes:block/drum_top"
+  }
+}
