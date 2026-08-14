@@ -1,43 +1,44 @@
 package net.vlldzlv.goblinstribes.block;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
-import net.minecraft.item.BlockItem;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.math.intprovider.UniformIntProvider;
-import net.vlldzlv.goblinstribes.GoblinsTribes;
+import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 import net.vlldzlv.goblinstribes.GoblinsTribes;
 import net.vlldzlv.goblinstribes.block.custom.Drum;
+import net.vlldzlv.goblinstribes.item.ModItems;
+
+import java.util.function.Supplier;
 
 public class ModBlocks {
-    public static final Block LADITE_BLOCK = registerBlock("ladite_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
-public static final Block STONE_LADITE_ORE = registerBlock("stone_ladite_ore",
-        new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f), UniformIntProvider.create(2,5)));
-public static final Block DEEPSLATE_LADITE_ORE = registerBlock("deepslate_ladite_ore",
-        new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(3f), UniformIntProvider.create(2,5)));
-public static final Block DRUM = registerBlock("drum",
-        new Drum(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK)));
+	public static final DeferredRegister<Block> BLOCKS =
+			DeferredRegister.create(ForgeRegistries.BLOCKS, GoblinsTribes.MOD_ID);
 
+	public static final RegistryObject<Block> LADITE_BLOCK = registerBlock("ladite_block",
+			() -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)));
 
+	public static final RegistryObject<Block> STONE_LADITE_ORE = registerBlock("stone_ladite_ore",
+			() -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2f), UniformInt.of(2, 5)));
 
+	public static final RegistryObject<Block> DEEPSLATE_LADITE_ORE = registerBlock("deepslate_ladite_ore",
+			() -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(3f), UniformInt.of(2, 5)));
 
+	public static final RegistryObject<Block> DRUM = registerBlock("drum",
+			() -> new Drum(BlockBehaviour.Properties.copy(Blocks.NOTE_BLOCK)));
 
-    private static Block registerBlock(String name, Block block){
-        registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, new Identifier(GoblinsTribes.MOD_ID,name), block);
-    }
-    private static void registerBlockItem(String name, Block block){
-        Registry.register(Registries.ITEM, new Identifier(GoblinsTribes.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings()));
-    }
+	private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
+		RegistryObject<T> toReturn = BLOCKS.register(name, block);
+		registerBlockItem(name, toReturn);
+		return toReturn;
+	}
 
-    public static void registerModBlocks(){
-        GoblinsTribes.LOGGER.info("Registering ModBlock for " + GoblinsTribes.MOD_ID);
-    }
+	private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
+		ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+	}
 }

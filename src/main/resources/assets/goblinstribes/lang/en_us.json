@@ -1,5 +1,24 @@
 {
   "item.goblinstribes.ladite": "Ladite",
+  "item.goblinstribes.ladite_sword": "Ladite Sword",
+  "item.goblinstribes.melody_sword": "Melody Sword",
+  "item.goblinstribes.nyufler_spawn_egg": "Nyufler Spawn Egg",
+  "entity.goblinstribes.nyufler": "Nyufler",
+  "item.goblinstribes.ladite_pickaxe": "Ladite Pickaxe",
+  "item.goblinstribes.ladite_axe": "Ladite Axe",
+  "item.goblinstribes.ladite_shovel": "Ladite Shovel",
+  "item.goblinstribes.ladite_hoe": "Ladite Hoe",
+  "item.goblinstribes.ladite_helmet": "Ladite Helmet",
+  "item.goblinstribes.ladite_chestplate": "Ladite Chestplate",
+  "item.goblinstribes.ladite_leggings": "Ladite Leggings",
+  "item.goblinstribes.ladite_boots": "Ladite Boots",
+
+  "item.goblinstribes.ladite_upgrade_smithing_template": "Smithing Template",
+  "item.goblinstribes.smithing_template.ladite_upgrade.applies_to": "Iron Equipment",
+  "item.goblinstribes.smithing_template.ladite_upgrade.ingredients": "Ladite",
+  "upgrade.goblinstribes.ladite_upgrade": "Ladite Upgrade",
+  "item.goblinstribes.smithing_template.ladite_upgrade.base_slot_description": "Add iron armor, weapon, or tool",
+  "item.goblinstribes.smithing_template.ladite_upgrade.additions_slot_description": "Add Ladite crystal",
 
   "block.goblinstribes.ladite_block": "Block of Ladite",
 
@@ -8,6 +27,5 @@
 
   "block.goblinstribes.drum": "Goblin Drum",
 
-
-  "itemgroup.ladite": "Goblins Tribes"
+  "itemGroup.goblinstribes": "Goblins Tribes"
 }

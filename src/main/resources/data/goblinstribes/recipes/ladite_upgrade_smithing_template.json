@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "L L",
+    " I ",
+    "L L"
+  ],
+  "key": {
+    "L": {
+      "item": "goblinstribes:ladite"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "goblinstribes:ladite_upgrade_smithing_template"
+  }
+}

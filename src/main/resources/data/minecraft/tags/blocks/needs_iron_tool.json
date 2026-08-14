@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "goblinstribes:ladite_block",
-    "goblinstribes:deepslate_ladite_ore",
-    "goblinstribes:stone_ladite_ore"
+    "goblinstribes:deepslate_ladite_ore"
   ]
 }

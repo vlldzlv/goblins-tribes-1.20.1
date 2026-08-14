@@ -1,13 +1,31 @@
 {
   "item.goblinstribes.ladite": "Ладит",
+  "item.goblinstribes.ladite_sword": "Ладитовый меч",
+  "item.goblinstribes.melody_sword": "Меч мелодий",
+  "item.goblinstribes.nyufler_spawn_egg": "Яйцо призыва нюфлера",
+  "entity.goblinstribes.nyufler": "Нюфлер",
+  "item.goblinstribes.ladite_pickaxe": "Ладитовая кирка",
+  "item.goblinstribes.ladite_axe": "Ладитовый топор",
+  "item.goblinstribes.ladite_shovel": "Ладитовая лопата",
+  "item.goblinstribes.ladite_hoe": "Ладитовая мотыга",
+  "item.goblinstribes.ladite_helmet": "Ладитовый шлем",
+  "item.goblinstribes.ladite_chestplate": "Ладитовый нагрудник",
+  "item.goblinstribes.ladite_leggings": "Ладитовые поножи",
+  "item.goblinstribes.ladite_boots": "Ладитовые ботинки",
+
+  "item.goblinstribes.ladite_upgrade_smithing_template": "Кузнечный шаблон",
+  "item.goblinstribes.smithing_template.ladite_upgrade.applies_to": "Железное снаряжение",
+  "item.goblinstribes.smithing_template.ladite_upgrade.ingredients": "Ладит",
+  "upgrade.goblinstribes.ladite_upgrade": "Ладитовое улучшение",
+  "item.goblinstribes.smithing_template.ladite_upgrade.base_slot_description": "Положите железную броню, оружие или инструмент",
+  "item.goblinstribes.smithing_template.ladite_upgrade.additions_slot_description": "Положите кристалл ладита",
 
   "block.goblinstribes.ladite_block": "Цельный Ладит",
 
   "block.goblinstribes.stone_ladite_ore": "Залежи Ладита",
-  "block.goblinstribes.deepslate_ladite_ore": "Глубокосланцевые Залежи Ладита",
+  "block.goblinstribes.deepslate_ladite_ore": "Глубокосланцевые залежи Ладита",
 
-  "block.goblinstribes.drum": "Гоблинский Барабан",
+  "block.goblinstribes.drum": "Гоблинский барабан",
 
-
-  "itemgroup.ladite": "Гоблинские Племена"
+  "itemGroup.goblinstribes": "Гоблинские племена"
 }

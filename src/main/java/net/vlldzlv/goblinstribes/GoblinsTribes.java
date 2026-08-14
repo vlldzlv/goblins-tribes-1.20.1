@@ -1,22 +1,26 @@
 package net.vlldzlv.goblinstribes;
 
-import net.fabricmc.api.ModInitializer;
-
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.vlldzlv.goblinstribes.block.ModBlocks;
+import net.vlldzlv.goblinstribes.entity.ModEntities;
 import net.vlldzlv.goblinstribes.item.ModItems;
 import net.vlldzlv.goblinstribes.item.ModItemsGroups;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class GoblinsTribes implements ModInitializer {
+@Mod(GoblinsTribes.MOD_ID)
+public class GoblinsTribes {
 	public static final String MOD_ID = "goblinstribes";
-    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	@Override
-	public void onInitialize() {
-		ModItemsGroups.registerItemGroup();
+	public GoblinsTribes() {
+		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		ModItems.registerModItems();
-		ModBlocks.registerModBlocks();
+		ModItems.ITEMS.register(modEventBus);
+		ModBlocks.BLOCKS.register(modEventBus);
+		ModEntities.ENTITY_TYPES.register(modEventBus);
+		ModItemsGroups.CREATIVE_MODE_TABS.register(modEventBus);
 	}
 }

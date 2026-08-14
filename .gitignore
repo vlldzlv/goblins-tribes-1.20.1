@@ -4,6 +4,7 @@
 build/
 out/
 classes/
+src/generated/
 
 # eclipse
 
@@ -28,9 +29,18 @@ bin/
 
 *.DS_Store
 
-# fabric
+# minecraft
 
 run/
+crash-reports/
+
+# temp build/run logs
+
+build.log
+build.err.log
+runClient.log
+runClient.err.log
+runClient.pid
 
 # java
 
